@@ -2,7 +2,7 @@ from typing import List
 def solution(cacheSize : int, cities: List) -> int:
     import collections
     
-    
+    # 이 문제의 설명은 카카오 홈페이지에 있습니다
     # Exception Handling
     if cacheSize == 0:
         time = len(cities)*5
