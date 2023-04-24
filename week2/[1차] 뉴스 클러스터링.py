@@ -1,4 +1,4 @@
-def solution(str1, str2):
+def solution(str1: str, str2: str)-> int:
     import collections
     
     # 소문자 아스키 코드 생성

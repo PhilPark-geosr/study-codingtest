@@ -1,4 +1,5 @@
-def solution(cacheSize, cities):
+from typing import List
+def solution(cacheSize : int, cities: List) -> int:
     import collections
     
     
@@ -27,7 +28,7 @@ def solution(cacheSize, cities):
                 if cities[i].lower() == q[k]:
                     flag = True
                     q.remove(cities[i].lower())
-                    # break
+                    break
             if flag == True: # 캐시안에서 처리되었으면
                 time+=1
             else:
