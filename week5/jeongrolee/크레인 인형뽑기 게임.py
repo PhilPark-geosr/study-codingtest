@@ -17,15 +17,6 @@
 
 
 def solution(board, moves):
-    # y축 = board의 길이 -> j
-    # x축 = moves의 길이 -> i
-    # moves로 반복문 실행
-    # 크레인이 내려가는 것은 board의 길이 -> O(n)
-    # j를 1씩 증가해 나가며, 인형이 있는지 확인 -> board[j][i]
-    # 인형이 있으면 basket에 append & update 0
-    # 인형이 없으면 i++
-    # while 연속된 숫자가 없을때까지, basket에서 연속된 숫자 찾기 count ++ (2개씩만)
-    # basket = 터트려진 인형이 사라진 basket
     count = 0
     basket = []  # basket의 최대 크기는 moves의 크기와 같으므로, 공간 복잡도는 O(n) = O(moves의 크기)
     for i in moves:
